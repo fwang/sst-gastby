@@ -1,0 +1,29 @@
+{
+  "name": "sst-gastby",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "frontend"
+    ]
+  },
+  "packageManager": "yarn@3.1.0",
+  "scripts": {
+    "test": "sst test",
+    "start": "sst start",
+    "build": "sst build",
+    "deploy": "sst deploy",
+    "remove": "sst remove"
+  },
+  "eslintConfig": {
+    "extends": ["serverless-stack"]
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.126.0"
+  },
+  "dependencies": {
+    "@aws-cdk/core": "1.126.0",
+    "@serverless-stack/cli": "0.51.1",
+    "@serverless-stack/resources": "0.51.1"
+  }
+}
